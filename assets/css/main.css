@@ -4339,6 +4339,10 @@ a img {
     margin: 10px
 }
 
+.techused {
+  font-size: 40px;
+}
+
 .user {
     text-align: center;
     font-size: 60px;
