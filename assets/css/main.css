@@ -4477,3 +4477,103 @@ a img {
     margin: 0;
     color: #fff
 }
+.country-table-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.country-table {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.country-table th, .country-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.country-table thead {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.country-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  background-color: #e0f3ff;
+  color: #007acc;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  position: relative;
+  padding-left: 26px;
+  cursor: default;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
